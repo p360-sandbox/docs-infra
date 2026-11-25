@@ -1,0 +1,118 @@
+{
+  "generatedAt": "2026-07-17T00:00:00Z",
+  "components": [
+    {
+      "type": "hero",
+      "title": "Hero banner",
+      "description": "Full-width page header with background image, heading, and CTAs.",
+      "schema": {
+        "type": "object",
+        "required": ["type", "heading"],
+        "properties": {
+          "type": { "const": "hero" },
+          "image": { "type": "string" },
+          "eyebrow": { "type": "string" },
+          "heading": { "type": "string" },
+          "description": { "type": "string" },
+          "cta": {
+            "type": "object",
+            "properties": {
+              "label": { "type": "string" },
+              "href": { "type": "string" }
+            }
+          },
+          "ctaSecondary": {
+            "type": "object",
+            "properties": {
+              "label": { "type": "string" },
+              "href": { "type": "string" }
+            }
+          }
+        }
+      },
+      "fieldOrder": [
+        "image",
+        "eyebrow",
+        "heading",
+        "description",
+        "cta",
+        "ctaSecondary"
+      ]
+    },
+    {
+      "type": "zpattern",
+      "title": "Z-pattern section",
+      "description": "Alternating image and text block with an optional CTA.",
+      "schema": {
+        "type": "object",
+        "required": ["type", "heading"],
+        "properties": {
+          "type": { "const": "zpattern" },
+          "image": { "type": "string" },
+          "heading": { "type": "string" },
+          "description": { "type": "string" },
+          "cta": {
+            "type": "object",
+            "properties": {
+              "label": { "type": "string" },
+              "href": { "type": "string" }
+            }
+          },
+          "reverse": { "type": "boolean" }
+        }
+      },
+      "fieldOrder": ["image", "heading", "description", "cta", "reverse"]
+    },
+    {
+      "type": "publications",
+      "title": "Publication grid",
+      "description": "Live listing of publications, optionally scoped to a category.",
+      "schema": {
+        "type": "object",
+        "required": ["type"],
+        "properties": {
+          "type": { "const": "publications" },
+          "heading": { "type": "string" },
+          "category": { "type": "string" }
+        }
+      },
+      "fieldOrder": ["heading", "category"]
+    },
+    {
+      "type": "bannercta",
+      "title": "Banner CTA",
+      "description": "Call-to-action banner with title, description, and CTAs.",
+      "schema": {
+        "type": "object",
+        "required": ["type", "title"],
+        "properties": {
+          "type": { "const": "bannercta" },
+          "useDarkCtaStyle": { "type": "boolean" },
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "cta": {
+            "type": "object",
+            "properties": {
+              "label": { "type": "string" },
+              "href": { "type": "string" }
+            }
+          },
+          "ctaSecondary": {
+            "type": "object",
+            "properties": {
+              "label": { "type": "string" },
+              "href": { "type": "string" }
+            }
+          }
+        }
+      },
+      "fieldOrder": [
+        "useDarkCtaStyle",
+        "title",
+        "description",
+        "cta",
+        "ctaSecondary"
+      ]
+    }
+  ]
+}

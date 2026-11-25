@@ -1,0 +1,4 @@
+sessionsInvalidBefore: null
+roles:
+  admin:
+    users: [admin@local.test, dev@local.test, approver@local.test]

@@ -1,0 +1,13 @@
+settings:
+  org: p360-sandbox
+  categories: [Lumen, Pebble, GettingStarted]
+  reservedRedirectPrefixes: [/support]
+  redirectChainLimit: 2
+  redirectExternalAllowlist: [example.com]
+  allowSelfApproval: false
+  requestRetentionDays: 365
+  notifications:
+    publishers: [dev@local.test]
+    from: docs-portal@local.test
+  devSiteBaseUrl: http://localhost:4331
+  prodSiteBaseUrl: http://localhost:4333
