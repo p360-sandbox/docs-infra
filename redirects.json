@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "from": "/LumenAdmin-V2512/GettingStarted",
+    "to": "/LumenAdmin-V2603/GettingStarted",
+    "status": 301
+  },
+  {
+    "from": "/category/LumenSuite",
+    "to": "/category/Lumen/",
+    "status": 301
+  },
+  {
+    "from": "/pebble",
+    "to": "/PebbleNotes/GettingStarted",
+    "status": 302
+  }
+]
