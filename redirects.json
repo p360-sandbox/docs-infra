@@ -18,5 +18,10 @@
     "from": "/LumenApi/old-reference",
     "to": "/LumenApi-V2603/Reference",
     "status": 301
+  },
+  {
+    "from": "/pebble-notes",
+    "to": "/PebbleNotes/GettingStarted",
+    "status": 301
   }
 ]
