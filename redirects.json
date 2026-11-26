@@ -18,5 +18,10 @@
     "from": "/LumenApi/old-reference",
     "to": "/LumenApi-V2603/Reference",
     "status": 301
+  },
+  {
+    "from": "/trigger-test",
+    "to": "/category/Lumen/",
+    "status": 302
   }
 ]
