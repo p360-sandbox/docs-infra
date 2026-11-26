@@ -5,7 +5,7 @@
     "status": 301
   },
   {
-    "from": "/category/LumenSuite",
+    "from": "/lumen-suite",
     "to": "/category/Lumen/",
     "status": 301
   },
